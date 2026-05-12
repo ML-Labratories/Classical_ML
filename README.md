@@ -1,244 +1,187 @@
 ```markdown
 # Classical_ML
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Machine%20Learning-Classical-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Python-3.x-yellow?style=for-the-badge&logo=python" />
+  <img src="https://img.shields.io/badge/Framework-scikit--learn-orange?style=for-the-badge&logo=scikitlearn" />
+  <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge" />
+</p>
+
+<p align="center">
+  A collection of classical machine learning implementations and end‑to‑end ML workflows for learning, experimentation, and research.
+</p>
+
+---
+
 ## Overview
-**Classical_ML** is a comprehensive repository focused on classical machine learning algorithms and end‑to‑end ML pipelines.  
-It is designed to demonstrate the complete workflow of machine learning projects — from data preprocessing and model implementation to evaluation and visualization — with a strong emphasis on both **theoretical understanding** and **practical implementation**.
- 
-The repository includes independent mini‑projects covering **classification** and **regression** tasks, combining:
 
-- Implementations **from scratch**
-- Implementations using **scikit‑learn**
-- Clear evaluation and benchmarking practices
+**Classical_ML** demonstrates the complete machine learning pipeline — from preprocessing and feature engineering to model evaluation and visualization.
 
-This project is maintained by ML/DL researchers and developers and is open to community contributions.
+The repository includes:
 
----
-
-## Project Goals
-
-- Provide clear implementations of classical machine learning algorithms  
-- Demonstrate complete ML workflows in practical scenarios  
-- Offer educational resources for understanding core ML concepts  
-- Provide reproducible experiments for research and experimentation
+- Implementations from scratch
+- scikit‑learn based implementations
+- Independent Jupyter notebooks
+- Reproducible experiments and visualizations
 
 ---
 
-## Key Features
+# Repository Structure
 
-- End‑to‑end ML pipelines (preprocessing → training → evaluation)
-- Classical ML algorithms implemented **from scratch**
-- scikit‑learn based implementations for comparison
-- Independent and self‑contained Jupyter notebooks
-- Clear visualizations and evaluation metrics
-- Suitable for **learning, experimentation, and research**
-
----
-
-## Repository Structure
-
-The repository is organized by problem type rather than execution paths:
-
-### Classification
-- Decision Tree *(from scratch)*
-- Naive Bayes *(from scratch)*
-- K‑Nearest Neighbors *(from scratch)*
-- Logistic Regression
-- Support Vector Machine (SVM)
-
-### Regression
-- Linear Regression
-- Polynomial Regression
-
-Each notebook represents an independent mini‑project and can be executed separately.
+```text
+Classical_ML/
+│
+├── Classification/
+│   ├── Decision_Tree/
+│   ├── KNN/
+│   ├── Naive_Bayes/
+│   ├── Logistic_Regression/
+│   └── SVM/
+│
+├── Regression/
+│   ├── Linear_Regression/
+│   └── Polynomial_Regression/
+│
+├── datasets/
+├── requirements.txt
+└── README.md
+```
 
 ---
 
-## Implemented Machine Learning Pipeline
+# Implemented Algorithms
 
-Each notebook follows a structured ML workflow (applied when relevant):
-
-1. Data Loading / Generation  
-2. Data Cleaning  
-3. Feature Scaling  
-4. Train / Test Split  
-5. Cross‑Validation  
-6. Hyperparameter Tuning  
-   - Grid Search
-   - Random Search  
-7. Model Training  
-8. Model Evaluation  
-9. Visualization  
-
----
-
-## Algorithms & Datasets
-
-### Classification
+## Classification
 
 | Algorithm | Implementation | Dataset |
-|----------|---------------|--------|
+|---|---|---|
 | Decision Tree | From Scratch | `make_blobs` |
-| KNN | From Scratch | `make_blobs` |
-| Naive Bayes | From Scratch | Synthetic Generated Data |
-| Logistic Regression | From Scratch / sklearn | Breast Cancer Dataset |
-| SVM | sklearn | Iris Dataset |
+| K‑Nearest Neighbors | From Scratch | `make_blobs` |
+| Naive Bayes | From Scratch | Synthetic Data |
+| Logistic Regression | Scratch / sklearn | Breast Cancer |
+| Support Vector Machine | sklearn | Iris |
 
-### Regression
+---
+
+## Regression
 
 | Algorithm | Implementation |
-|----------|---------------|
+|---|---|
 | Linear Regression | From Scratch |
 | Polynomial Regression | From Scratch |
 
 ---
 
-## Evaluation Metrics
+# ML Workflow
 
-### Classification Metrics
+Each notebook typically includes:
 
-- Accuracy Score
-- Confusion Matrix
-- ROC Curve
-- AUC
-
-### Regression Metrics
-
-- Mean Squared Error (MSE)
-- R² Score
+- Data preprocessing
+- Feature scaling
+- Train/Test split
+- Cross‑validation
+- Hyperparameter tuning
+- Model training
+- Evaluation
+- Visualization
 
 ---
 
-## Visualization
+# Evaluation Metrics
 
-The repository includes meaningful visualizations such as:
+| Task | Metrics |
+|---|---|
+| Classification | Accuracy, Confusion Matrix, ROC Curve, AUC |
+| Regression | MSE, R² Score |
+
+---
+
+# Visualizations
+
+The repository includes visualizations such as:
 
 - Decision boundaries
 - Confusion matrices
 - ROC curves
 - Regression lines
-- Actual vs predicted comparisons
+- Actual vs Predicted comparisons
 
-All visualizations are implemented using:
+Built using:
 
 - `matplotlib`
 - `seaborn`
 
 ---
 
-## Datasets
-
-- Datasets are provided in **CSV format** within the repository.
-- Data sources include:
-  - `sklearn.datasets`
-  - Kaggle
-- Synthetic datasets are generated where appropriate to highlight algorithm behavior.
-
----
-
-## Installation
-
-Clone the repository:
+# Installation
 
 ```bash
 git clone https://github.com/ML-Labratories/Classical_ML.git
 cd Classical_ML
-```
-
-Install dependencies:
-
-```bash
 pip install -r requirements.txt
 ```
-
-### Dependencies
-
-- numpy  
-- pandas  
-- scikit-learn  
-- matplotlib  
-- seaborn  
-
-No GPU is required  
-Designed to run on standard CPU environments
 
 ---
 
-## Quick Start
+# Dependencies
 
-1. Clone the repository
+| Library | Purpose |
+|---|---|
+| NumPy | Numerical computations |
+| Pandas | Data manipulation |
+| scikit-learn | ML utilities and models |
+| Matplotlib | Visualization |
+| Seaborn | Statistical plotting |
 
-```bash
-git clone https://github.com/ML-Labratories/Classical_ML.git
-```
+---
 
-2. Install the required dependencies
+# Usage
 
-```bash
-pip install -r requirements.txt
-```
-
-3. Launch Jupyter Notebook
+Launch Jupyter Notebook:
 
 ```bash
 jupyter notebook
 ```
 
-4. Open any notebook and run the cells to explore the implementations.
+Open any notebook and run the cells.
+
+All notebooks are fully independent and self‑contained.
 
 ---
 
-## Usage
-
-- All notebooks are **self‑contained**
-- There is **no execution dependency between notebooks**
-- Each notebook can be run independently for experimentation, learning, or analysis
-
----
-
-## Future Improvements
-
-Planned extensions for the repository include:
+# Future Improvements
 
 - Clustering algorithms
 - Ensemble learning methods
-- Additional benchmark comparisons
-- More real‑world datasets
-- Expanded visualization and experiment tracking
+- More benchmark datasets
+- Additional visualizations
+- Experiment tracking
 
 ---
 
-## Contribution
+# Contributing
 
-Contributions are welcome and appreciated.
+Contributions are welcome.
 
-You can contribute by:
-
-- Implementing additional machine learning algorithms  
-- Improving existing implementations  
-- Adding new datasets or experiments  
-- Improving documentation  
-- Fixing bugs  
-
-Steps to contribute:
-
-1. Fork the repository  
-2. Create a new branch  
-3. Make your changes  
-4. Submit a Pull Request  
-
-You can also open an **Issue** to suggest improvements or report bugs.
-
----
-
-## License
-
-The license for this project has not been specified yet and will be added in a future update.
-
----
-
-## Maintainers
-
-This repository is maintained by machine learning researchers and developers within the **ML-Labratories** organization.
+```bash
+# Fork the repository
+# Create a new branch
+# Make your changes
+# Submit a Pull Request
 ```
 
+You can also open an issue for bug reports or suggestions.
+
+---
+
+# License
+
+License information will be added in a future update.
+
+---
+
+# Maintainers
+
+Maintained by the **ML‑Labratories** organization.
+```
