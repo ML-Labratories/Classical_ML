@@ -1,35 +1,35 @@
-```markdown
 # Classical_ML
 
 <p align="center">
   <img src="https://img.shields.io/badge/Machine%20Learning-Classical-blue?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Python-3.x-yellow?style=for-the-badge&logo=python" />
-  <img src="https://img.shields.io/badge/Framework-scikit--learn-orange?style=for-the-badge&logo=scikitlearn" />
-  <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Python-3.x-yellow?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Framework-scikit--learn-orange?style=for-the-badge&logo=scikitlearn&logoColor=white" />
+  <img src="https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge" />
 </p>
 
 <p align="center">
-  A collection of classical machine learning implementations and end‑to‑end ML workflows for learning, experimentation, and research.
+A collection of classical machine learning implementations and end‑to‑end ML workflows for learning, experimentation, and research.
 </p>
 
 ---
 
 ## Overview
 
-**Classical_ML** demonstrates the complete machine learning pipeline — from preprocessing and feature engineering to model evaluation and visualization.
+**Classical_ML** is a repository dedicated to implementing and exploring classical machine learning algorithms.  
+It demonstrates the full machine learning pipeline — from **data preprocessing and feature engineering** to **model training, evaluation, and visualization**.
 
-The repository includes:
+The project focuses on:
 
-- Implementations from scratch
-- scikit‑learn based implementations
-- Independent Jupyter notebooks
-- Reproducible experiments and visualizations
+- Implementations **from scratch** for deeper understanding
+- **scikit‑learn** implementations for comparison
+- Clean and reproducible **Jupyter notebooks**
+- Clear visualizations and evaluation metrics
 
 ---
 
-# Repository Structure
+## Repository Structure
 
-```text
+```
 Classical_ML/
 │
 ├── Classification/
@@ -48,11 +48,13 @@ Classical_ML/
 └── README.md
 ```
 
+Each notebook represents an independent mini‑project and can be executed separately.
+
 ---
 
-# Implemented Algorithms
+## Implemented Algorithms
 
-## Classification
+### Classification
 
 | Algorithm | Implementation | Dataset |
 |---|---|---|
@@ -62,9 +64,7 @@ Classical_ML/
 | Logistic Regression | Scratch / sklearn | Breast Cancer |
 | Support Vector Machine | sklearn | Iris |
 
----
-
-## Regression
+### Regression
 
 | Algorithm | Implementation |
 |---|---|
@@ -73,50 +73,53 @@ Classical_ML/
 
 ---
 
-# ML Workflow
+## Machine Learning Workflow
 
-Each notebook typically includes:
+Typical workflow followed in the notebooks:
 
-- Data preprocessing
-- Feature scaling
-- Train/Test split
-- Cross‑validation
-- Hyperparameter tuning
-- Model training
-- Evaluation
-- Visualization
+1. Data Loading or Generation  
+2. Data Cleaning  
+3. Feature Scaling  
+4. Train / Test Split  
+5. Cross‑Validation  
+6. Hyperparameter Tuning  
+7. Model Training  
+8. Model Evaluation  
+9. Visualization  
 
 ---
 
-# Evaluation Metrics
+## Evaluation Metrics
 
 | Task | Metrics |
 |---|---|
 | Classification | Accuracy, Confusion Matrix, ROC Curve, AUC |
-| Regression | MSE, R² Score |
+| Regression | Mean Squared Error (MSE), R² Score |
 
 ---
 
-# Visualizations
+## Visualizations
 
-The repository includes visualizations such as:
+The repository includes multiple visualizations to better understand model behavior:
 
-- Decision boundaries
-- Confusion matrices
-- ROC curves
-- Regression lines
-- Actual vs Predicted comparisons
+- Decision boundaries  
+- Confusion matrices  
+- ROC curves  
+- Regression lines  
+- Actual vs Predicted comparisons  
 
-Built using:
+Libraries used:
 
-- `matplotlib`
-- `seaborn`
+- matplotlib  
+- seaborn  
 
 ---
 
-# Installation
+## Installation
 
-```bash
+Clone the repository and install dependencies:
+
+```
 git clone https://github.com/ML-Labratories/Classical_ML.git
 cd Classical_ML
 pip install -r requirements.txt
@@ -124,33 +127,35 @@ pip install -r requirements.txt
 
 ---
 
-# Dependencies
+## Dependencies
 
 | Library | Purpose |
 |---|---|
-| NumPy | Numerical computations |
+| NumPy | Numerical computation |
 | Pandas | Data manipulation |
-| scikit-learn | ML utilities and models |
+| scikit-learn | Machine learning utilities |
 | Matplotlib | Visualization |
-| Seaborn | Statistical plotting |
+| Seaborn | Statistical visualization |
 
 ---
 
-# Usage
+## Usage
 
-Launch Jupyter Notebook:
+Run Jupyter Notebook:
 
-```bash
+```
 jupyter notebook
 ```
 
-Open any notebook and run the cells.
+Open any notebook and execute the cells.
 
-All notebooks are fully independent and self‑contained.
+All notebooks are **independent and self‑contained**.
 
 ---
 
-# Future Improvements
+## Future Improvements
+
+Planned extensions include:
 
 - Clustering algorithms
 - Ensemble learning methods
@@ -160,28 +165,35 @@ All notebooks are fully independent and self‑contained.
 
 ---
 
-# Contributing
+## Contributing
 
 Contributions are welcome.
 
-```bash
-# Fork the repository
-# Create a new branch
-# Make your changes
-# Submit a Pull Request
-```
+You can contribute by:
 
-You can also open an issue for bug reports or suggestions.
+- Implementing new machine learning algorithms
+- Improving existing implementations
+- Adding datasets or experiments
+- Improving documentation
+- Fixing bugs
+
+Steps:
+
+1. Fork the repository  
+2. Create a new branch  
+3. Make your changes  
+4. Submit a Pull Request  
+
+You can also open an **Issue** for suggestions or bug reports.
 
 ---
 
-# License
+## License
 
 License information will be added in a future update.
 
 ---
 
-# Maintainers
+## Maintainers
 
 Maintained by the **ML‑Labratories** organization.
-```
