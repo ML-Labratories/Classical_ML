@@ -47,8 +47,6 @@ The project focuses on:
   - segmentation
   - img/
 
-- **datasets**: Stores various datasets used for training and testing models.
-
 - **requirements.txt**: Lists all the Python dependencies required to run the code in this repository.
 
 - **README.md**: This file, providing an overview of the repository.
