@@ -30,22 +30,28 @@ The project focuses on:
 ## Repository Structure
 
 ```
-Classical_ML/
-│
-├── Classification/
-│   ├── Decision_Tree/
-│   ├── KNN/
-│   ├── Naive_Bayes/
-│   ├── Logistic_Regression/
-│   └── SVM/
-│
-├── Regression/
-│   ├── Linear_Regression/
-│   └── Polynomial_Regression/
-│
-├── datasets/
-├── requirements.txt
-└── README.md
+- **Classification**:
+  - Decision_Tree/
+  - KNN/
+  - Naive_Bayes/
+  - Logistic_Regression/
+  - SVM/
+
+- **Regression**:
+  - Linear_Regression/
+  - Polynomial_Regression/
+
+- **Clustering**:
+  - DBSCAN
+  - K-means
+  - segmentation
+  - img/
+
+- **datasets**: Stores various datasets used for training and testing models.
+
+- **requirements.txt**: Lists all the Python dependencies required to run the code in this repository.
+
+- **README.md**: This file, providing an overview of the repository.
 ```
 
 Each notebook represents an independent mini‑project and can be executed separately.
@@ -71,6 +77,14 @@ Each notebook represents an independent mini‑project and can be executed separ
 | Linear Regression | From Scratch |
 | Polynomial Regression | From Scratch |
 
+### Clustering
+
+| Algorithm | Implementation |
+|---|---|
+| DBSCAN | From Scratch / sklearn |
+| K-means | From Scratch / sklearn |
+| Segmentation | Example implementations |
+
 ---
 
 ## Machine Learning Workflow
@@ -95,6 +109,7 @@ Typical workflow followed in the notebooks:
 |---|---|
 | Classification | Accuracy, Confusion Matrix, ROC Curve, AUC |
 | Regression | Mean Squared Error (MSE), R² Score |
+| Clustering | Silhouette Score, Davies-Bouldin Index (To be added) |
 
 ---
 
@@ -107,6 +122,7 @@ The repository includes multiple visualizations to better understand model behav
 - ROC curves  
 - Regression lines  
 - Actual vs Predicted comparisons  
+- Cluster visualizations (For Clustering algorithms)
 
 Libraries used:
 
@@ -157,7 +173,7 @@ All notebooks are **independent and self‑contained**.
 
 Planned extensions include:
 
-- Clustering algorithms
+- Clustering algorithms (Further development and more datasets)
 - Ensemble learning methods
 - More benchmark datasets
 - Additional visualizations
@@ -197,3 +213,5 @@ License information will be added in a future update.
 ## Maintainers
 
 Maintained by the **ML‑Labratories** organization.
+
+
